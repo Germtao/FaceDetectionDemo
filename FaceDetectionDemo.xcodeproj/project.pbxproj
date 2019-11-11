@@ -13,6 +13,7 @@
 		3BC0B4762379457700DA12EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BC0B4742379457700DA12EA /* Main.storyboard */; };
 		3BC0B4782379458500DA12EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BC0B4772379458500DA12EA /* Assets.xcassets */; };
 		3BC0B47B2379458500DA12EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BC0B4792379458500DA12EA /* LaunchScreen.storyboard */; };
+		3BC0B48323795D2C00DA12EA /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC0B48223795D2C00DA12EA /* CameraViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		3BC0B4772379458500DA12EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BC0B47A2379458500DA12EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3BC0B47C2379458500DA12EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BC0B48223795D2C00DA12EA /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				3BC0B46E2379457700DA12EA /* AppDelegate.swift */,
 				3BC0B4702379457700DA12EA /* SceneDelegate.swift */,
 				3BC0B4722379457700DA12EA /* ViewController.swift */,
+				3BC0B48223795D2C00DA12EA /* CameraViewController.swift */,
 				3BC0B4742379457700DA12EA /* Main.storyboard */,
 				3BC0B4772379458500DA12EA /* Assets.xcassets */,
 				3BC0B4792379458500DA12EA /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BC0B4732379457700DA12EA /* ViewController.swift in Sources */,
+				3BC0B48323795D2C00DA12EA /* CameraViewController.swift in Sources */,
 				3BC0B46F2379457700DA12EA /* AppDelegate.swift in Sources */,
 				3BC0B4712379457700DA12EA /* SceneDelegate.swift in Sources */,
 			);
