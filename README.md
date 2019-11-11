@@ -67,7 +67,7 @@ func faceDetect() {
 
 编译并运行程序，可以看到如下效果：
 
-[image-1]()
+![image-1](https://github.com/Germtao/FaceDetectionDemo/blob/master/images/image-1.png)
 
 根据控制台的输出结果，似乎可以检测出人脸：
 
@@ -81,7 +81,7 @@ func faceDetect() {
 
 - 此外，`Core Image` 和 `UIView（或UIKit）` 使用两个不同的坐标系（请参见下图）。因此还需要实现 `Core Image` 坐标到 `UIView` 坐标的转换。
 
-[image-2]()
+![image-2](https://github.com/Germtao/FaceDetectionDemo/blob/master/images/image-2.png)
 
 ## 实现 `Core Image` 坐标到 `UIView` 坐标的转换
 
@@ -147,7 +147,7 @@ private func faceDetect() {
 
 现在再一次运行程序，应该可以看到检测框将识别出的人脸框起来了，这样就成功地用 Core Image 检测到人脸了。
 
-[image-3]()
+![image-3](https://github.com/Germtao/FaceDetectionDemo/blob/master/images/image-3.png)
 
 ---
 
