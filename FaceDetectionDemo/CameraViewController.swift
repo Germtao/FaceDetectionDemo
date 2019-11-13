@@ -78,7 +78,7 @@ extension CameraViewController: UIImagePickerControllerDelegate, UINavigationCon
         }
         
         dismiss(animated: true, completion: nil)
-        
+        faceDetect()
     }
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {

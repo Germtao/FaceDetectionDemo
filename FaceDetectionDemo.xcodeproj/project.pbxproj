@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3BA927E9237AAD1E008DE87C /* VideoFaceDetectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA927E8237AAD1E008DE87C /* VideoFaceDetectionController.swift */; };
 		3BC0B46F2379457700DA12EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC0B46E2379457700DA12EA /* AppDelegate.swift */; };
 		3BC0B4712379457700DA12EA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC0B4702379457700DA12EA /* SceneDelegate.swift */; };
 		3BC0B4732379457700DA12EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC0B4722379457700DA12EA /* ViewController.swift */; };
@@ -14,9 +15,12 @@
 		3BC0B4782379458500DA12EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BC0B4772379458500DA12EA /* Assets.xcassets */; };
 		3BC0B47B2379458500DA12EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BC0B4792379458500DA12EA /* LaunchScreen.storyboard */; };
 		3BC0B48323795D2C00DA12EA /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC0B48223795D2C00DA12EA /* CameraViewController.swift */; };
+		3BC0B485237A45A300DA12EA /* DynamicFaceDetectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC0B484237A45A300DA12EA /* DynamicFaceDetectionController.swift */; };
+		3BC0B488237A49D600DA12EA /* DynamicFaceDetectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC0B487237A49D600DA12EA /* DynamicFaceDetectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3BA927E8237AAD1E008DE87C /* VideoFaceDetectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoFaceDetectionController.swift; sourceTree = "<group>"; };
 		3BC0B46B2379457700DA12EA /* FaceDetectionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceDetectionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BC0B46E2379457700DA12EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BC0B4702379457700DA12EA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +30,8 @@
 		3BC0B47A2379458500DA12EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3BC0B47C2379458500DA12EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BC0B48223795D2C00DA12EA /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		3BC0B484237A45A300DA12EA /* DynamicFaceDetectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicFaceDetectionController.swift; sourceTree = "<group>"; };
+		3BC0B487237A49D600DA12EA /* DynamicFaceDetectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicFaceDetectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +64,35 @@
 		3BC0B46D2379457700DA12EA /* FaceDetectionDemo */ = {
 			isa = PBXGroup;
 			children = (
+				3BC0B489237AAC1A00DA12EA /* Video+CoreImage */,
 				3BC0B46E2379457700DA12EA /* AppDelegate.swift */,
 				3BC0B4702379457700DA12EA /* SceneDelegate.swift */,
 				3BC0B4722379457700DA12EA /* ViewController.swift */,
 				3BC0B48223795D2C00DA12EA /* CameraViewController.swift */,
+				3BC0B486237A49AF00DA12EA /* 动态人脸检测 */,
 				3BC0B4742379457700DA12EA /* Main.storyboard */,
 				3BC0B4772379458500DA12EA /* Assets.xcassets */,
 				3BC0B4792379458500DA12EA /* LaunchScreen.storyboard */,
 				3BC0B47C2379458500DA12EA /* Info.plist */,
 			);
 			path = FaceDetectionDemo;
+			sourceTree = "<group>";
+		};
+		3BC0B486237A49AF00DA12EA /* 动态人脸检测 */ = {
+			isa = PBXGroup;
+			children = (
+				3BC0B484237A45A300DA12EA /* DynamicFaceDetectionController.swift */,
+				3BC0B487237A49D600DA12EA /* DynamicFaceDetectionView.swift */,
+			);
+			path = "动态人脸检测";
+			sourceTree = "<group>";
+		};
+		3BC0B489237AAC1A00DA12EA /* Video+CoreImage */ = {
+			isa = PBXGroup;
+			children = (
+				3BA927E8237AAD1E008DE87C /* VideoFaceDetectionController.swift */,
+			);
+			path = "Video+CoreImage";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,10 +166,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BC0B485237A45A300DA12EA /* DynamicFaceDetectionController.swift in Sources */,
+				3BC0B488237A49D600DA12EA /* DynamicFaceDetectionView.swift in Sources */,
 				3BC0B4732379457700DA12EA /* ViewController.swift in Sources */,
 				3BC0B48323795D2C00DA12EA /* CameraViewController.swift in Sources */,
 				3BC0B46F2379457700DA12EA /* AppDelegate.swift in Sources */,
 				3BC0B4712379457700DA12EA /* SceneDelegate.swift in Sources */,
+				3BA927E9237AAD1E008DE87C /* VideoFaceDetectionController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,14 +316,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 3ZHDMNQCT9;
 				INFOPLIST_FILE = FaceDetectionDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = cn.com.unitTao.FaceDetectionDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.qdsgvision.screen.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = visionscreen_test_dev;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -305,14 +336,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 3ZHDMNQCT9;
 				INFOPLIST_FILE = FaceDetectionDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = cn.com.unitTao.FaceDetectionDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.qdsgvision.screen.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = visionscreen_test_dev;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

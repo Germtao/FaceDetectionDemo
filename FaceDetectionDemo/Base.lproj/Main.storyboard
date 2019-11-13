@@ -71,7 +71,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pqe-a7-2Ya" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1833" y="868"/>
+            <point key="canvasLocation" x="2742.0289855072465" y="867.85714285714278"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Mwg-nw-gWz">
@@ -79,17 +79,116 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="k8B-Sj-AOE" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sJU-kE-EtC">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="BQm-Rf-LBM"/>
                         <segue destination="edD-yU-wFM" kind="relationship" relationship="viewControllers" id="dMg-gI-5Cy"/>
+                        <segue destination="QH6-kb-TPD" kind="relationship" relationship="viewControllers" id="x41-PF-Udt"/>
+                        <segue destination="R9S-hb-Frt" kind="relationship" relationship="viewControllers" id="EkT-Lk-ht1"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4CA-nZ-aeU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+        <!--动态人脸识别-->
+        <scene sceneID="FHs-yu-W1J">
+            <objects>
+                <viewController id="QH6-kb-TPD" customClass="DynamicFaceDetectionController" customModule="FaceDetectionDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b5U-gz-wae">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TKc-Gr-2df" customClass="DynamicFaceDetectionView" customModule="FaceDetectionDemo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TYK-ob-cnG">
+                                        <rect key="frame" x="354" y="20" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="0TS-vc-6vM"/>
+                                            <constraint firstAttribute="width" constant="40" id="bs0-KU-Z2J"/>
+                                        </constraints>
+                                        <state key="normal" image="camera.rotate" catalog="system"/>
+                                        <state key="highlighted" image="camera.rotate.fill" catalog="system"/>
+                                        <connections>
+                                            <action selector="switchCamera" destination="QH6-kb-TPD" eventType="touchUpInside" id="BAQ-fb-x9e"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="TYK-ob-cnG" firstAttribute="top" secondItem="TKc-Gr-2df" secondAttribute="top" constant="20" id="IUV-im-er7"/>
+                                    <constraint firstAttribute="trailing" secondItem="TYK-ob-cnG" secondAttribute="trailing" constant="20" id="Rq4-lX-tJY"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="0ef-E6-SvJ" firstAttribute="trailing" secondItem="TKc-Gr-2df" secondAttribute="trailing" id="LBb-cC-Tid"/>
+                            <constraint firstItem="TKc-Gr-2df" firstAttribute="leading" secondItem="0ef-E6-SvJ" secondAttribute="leading" id="Vg5-pA-YNZ"/>
+                            <constraint firstItem="TKc-Gr-2df" firstAttribute="top" secondItem="0ef-E6-SvJ" secondAttribute="top" id="XCj-87-Biz"/>
+                            <constraint firstItem="0ef-E6-SvJ" firstAttribute="bottom" secondItem="TKc-Gr-2df" secondAttribute="bottom" id="ztk-Bz-yJc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0ef-E6-SvJ"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="动态人脸识别" id="hSE-9Q-WSm"/>
+                    <navigationItem key="navigationItem" id="ziB-he-E0I"/>
+                    <connections>
+                        <outlet property="preview" destination="TKc-Gr-2df" id="OoM-Ih-V3q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y8u-B0-xEV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="921"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="E6C-kl-Go9">
+            <objects>
+                <viewController id="R9S-hb-Frt" customClass="VideoFaceDetectionController" customModule="FaceDetectionDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YcI-Fj-z1G">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mK7-e6-Djt">
+                                <rect key="frame" x="264" y="663" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="4Y7-xS-gwC"/>
+                                    <constraint firstAttribute="width" constant="150" id="8vl-Kz-kzx"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vq0-B8-g8z">
+                                <rect key="frame" x="359" y="44" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="BJ0-sk-RxR"/>
+                                    <constraint firstAttribute="height" constant="40" id="uK6-7f-Q5j"/>
+                                </constraints>
+                                <state key="normal" image="camera.rotate" catalog="system"/>
+                                <state key="highlighted" image="camera.rotate.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="switchCamera" destination="R9S-hb-Frt" eventType="touchUpInside" id="9Wh-qx-oKs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="vq0-B8-g8z" firstAttribute="top" secondItem="7oR-63-Qvb" secondAttribute="top" id="NDW-AQ-igt"/>
+                            <constraint firstItem="7oR-63-Qvb" firstAttribute="trailing" secondItem="vq0-B8-g8z" secondAttribute="trailing" constant="15" id="b5c-uC-iWz"/>
+                            <constraint firstItem="mK7-e6-Djt" firstAttribute="trailing" secondItem="7oR-63-Qvb" secondAttribute="trailing" id="i5i-Nh-AGc"/>
+                            <constraint firstItem="7oR-63-Qvb" firstAttribute="bottom" secondItem="mK7-e6-Djt" secondAttribute="bottom" id="zyE-mB-rz6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7oR-63-Qvb"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="SV7-ev-3KF"/>
+                    <connections>
+                        <outlet property="imageView" destination="mK7-e6-Djt" id="c9x-jB-sN0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zGi-fF-4Hg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1033" y="951"/>
         </scene>
         <!--Item-->
         <scene sceneID="iwm-eg-Aho">
@@ -108,10 +207,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5mt-uh-zbB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1048" y="868"/>
+            <point key="canvasLocation" x="1957.9710144927537" y="867.85714285714278"/>
         </scene>
     </scenes>
     <resources>
+        <image name="camera.rotate" catalog="system" width="64" height="48"/>
+        <image name="camera.rotate.fill" catalog="system" width="64" height="48"/>
         <image name="face-1" width="750" height="1093"/>
     </resources>
 </document>

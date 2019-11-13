@@ -19,7 +19,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView! {
         didSet {
-            imageView.image = UIImage(named: "face-1")
+            imageView.image = UIImage(named: "face-5")
         }
     }
     
